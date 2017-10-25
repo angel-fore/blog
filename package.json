@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client-dev": "node ./webpack/entry --stage client --env dev",
     "client-prd": "node ./webpack/entry --stage client --env prd",
-    "server-run" : "node ./server/index",
-    "start": "npm run client-prd && npm run server-run"
+    "server-dev": "node ./server/index --env dev",
+    "server-prd": "node ./server/index --env prd",
+    "start": "npm run client-prd && server-prd"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,9 @@
     "koa-router": "^7.2.1",
     "koa-static": "^4.0.1",
     "koa-views": "^6.1.1",
+    "mime": "^2.0.3",
+    "mz": "^2.7.0",
+    "nunjucks": "^3.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0"
