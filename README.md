@@ -1,2 +1,2 @@
 # blog
-nodeJs + react + mongodb + webpack 
+nodeJs + nunjucks + mongodb + webpack 
